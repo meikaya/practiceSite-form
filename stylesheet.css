@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* all */
+a {
+    color: black;
+}
+h1, h2, h3 {
+    font-weight: normal;
+}
+button {
+    color: black;
+    height: 48px;
+    width: 96px;
+    background-color: rgb(155, 213, 255);
+    border-radius: 10px;
+    border: 2px solid rgb(103, 111, 121);
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background: rgb(97, 131, 156);
+    color: rgb(223, 240, 255);
+}
+
+/* header */
+header {
+    background: rgb(215, 225, 255);
+    height: 72px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 36px;
+}
+.btn a {
+    padding-right: 16px;
+}
+
+/* section */
+.section {
+    background-color: rgb(255, 213, 199);
+    /* height: 48px; */
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+    color: tomato;
+
+    /* とりあえず消しておく */
+    display: none;
+}
+
+.hidden {
+    display: block;
+}
+
+/* form */
+form {
+    /* background: orange; */
+    padding: 0 32px;
+    h3 {
+        font-size: 32px;
+        padding:24px 0 0 24px ;
+    }
+    div {
+        margin: 16px 0 0 0px;
+    }
+    label {
+        font-size: 20px;
+    }
+    option {
+        font-size: 20px;
+    }
+    legend {
+        font-size: 24px;
+    }
+    .name,.sex,.age,.tell,.mail,.password {
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        height: 96px;
+    }
+    .why {
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        height: 288px;
+    }
+    input[type=text] {
+        width: 240px;
+        height: 28px;
+        margin: 0 0 0 24px;
+        font-size: 20px;
+    }
+    input[type=radio] {
+        margin: 0 0 0 24px; 
+    }
+    select {
+        margin: 0 0 0 24px;
+        font-size: 20px;
+    }
+    input[type=checkbox], input[type=password] {
+        margin: 0 0 0 24px;
+        font-size: 20px;
+    }
+    textarea {
+        margin: 0 0 0 24px;
+        width: 240px;
+        height: 24px;
+        font-size: 20px;
+    }
+}
+.marg {
+    margin: 0 0 0 48px;
+}
+.back {
+    background: #ddd;
+    border-radius: 10px;
+}
+
+/* 送信ボタン */
+.btn-2 {
+    text-align: center;
+    padding: 48px 0;
+}
+.back-btn {
+    margin-left: 30px;
+}
+
+/* footer */
+footer {
+    background: #a5aecd;
+    height: 192px;
+    text-align: center;
+    padding-top: 64px;
+}
+
+@media(max-width: 800px) {
+    form {
+        padding-left: 0;
+    }
+}
+@media(max-width: 450px){
+    header h1 {
+        font-size: 30px;
+    }
+    .btn a {
+        padding-right: 8px;
+    }
+    form {
+        h3 {
+            font-size: 24px;
+        }
+        legend {
+            font-size: 20px;
+        }
+    }
+    .marg {
+        margin-left: 32px;
+    }
+    .btn-2 {
+        padding: 24px 0;
+    }
+    footer {
+        height: 400px;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub練習用サイト</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">〇〇空港</a></h1>
+        <!-- <div class="btn">
+            <a href="rogin.html">
+                <button>会員登録</button>
+            </a>
+            <a href="rogin.html">
+                <button>ログイン</button>
+            </a>
+        </div> -->
+    </header>
+
+    <form>
+        <h3>入力してください</h3>
+        <div class="marg">
+            <div class="mail back">
+                <label>
+                    <legend>メールアドレスまたは電話番号</legend>
+                    <input type="text">
+                </label>
+            </div>
+            <div class="password back">
+                <label>
+                    <legend>パスワード</legend>
+                    <input type="password">
+                </label>
+            </div>
+        </div>
+    </form>
+
+    <div class="btn-2">
+            <button id="btn-2">送信</button>
+        <a href="index.html">
+            <button id="btn-2" class="back-btn">戻る</button>
+        </a>
+    </div>
+
+    <section-1 class="section" id="sec-2">
+        <h2>会員登録が完了しました</div></h2>
+    </section-1>
+
+
+    <footer>
+        <small>@smallで書く</small>
+    </footer>
+
+    <script>
+        const btn2 = document.getElementById("btn-2");
+        const sec2 = document.getElementById("sec-2");
+        btn2.addEventListener("click",function(){
+        sec2.classList.toggle("hidden") });
+    </script>
+</body>
+</html>

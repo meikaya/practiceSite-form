@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub練習用サイト</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">〇〇空港</a></h1>
+        <div class="btn">
+            <a href="rogin.html">
+                <button id="btn-0">会員登録</button>
+            </a>
+            <a href="rogin.html">
+                <button id="btn-1">ログイン</button>
+            </a>
+        </div>
+    </header>
+
+    <form>
+        <h3>アンケートにご協力ください</h3>
+        <div class="marg">
+            <div class="name back">
+                <label>
+                    <legend>お名前</legend>
+                    <input type="text" placeholder="例:山田太郎">
+                </label>
+            </div>
+            <div class="sex back">
+                <fieldset>
+                    <legend>性別</legend>
+                    <label><input type="radio" name="age"> 男</label>
+                    <label><input type="radio" name="age"> 女</label>
+                    <label><input type="radio" name="age"> その他</label>
+                </fieldset>
+            </div>
+            <div class="age back">
+                <label>
+                    <legend>年齢</legend>
+                    <select>
+                        <option>年齢を選択してください</option>
+                        <option>十代未満</option>
+                        <option>十代</option>
+                        <option>二十代</option>
+                        <option>三十代</option>
+                        <option>四十代</option>
+                        <option>五十代</option>
+                        <option>六十代</option>
+                        <option>七十代</option>
+                        <option>八十代</option>
+                        <option>その他</option>
+                    </select>
+                </label>
+            </div>
+            <div class="why back">
+                <fieldset>
+                    <legend>なぜこの航空会社を使用されましたか？</legend>
+                    <label><input type="checkbox"> 友人に勧められた</label><br>
+                    <label><input type="checkbox"> 安全性が高い</label><br>
+                    <label><input type="checkbox"> 価格が安い</label><br>
+                    <label><input type="checkbox"> 比較サイトでの評価が高かった</label><br>
+                    <label><input type="checkbox"> 利用しやすい時間帯だった</label><br>
+                    <label><input type="checkbox"> 常にこの飛行機を利用している</label><br>
+                    <label><input type="checkbox"> その他</label><br>
+                </fieldset>
+            </div>
+            <div class="tell back">
+                <label>
+                    <legend>伝えたいこと</legend>
+                    <textarea  placeholder="例:機内サービスが良い"></textarea>
+                </label>
+            </div>
+        </div>
+    </form>
+
+    <div class="btn-2">
+        <button id="btn-2">送信</button>
+    </div>
+    
+    <section-3 class="section" id="sec-2">
+        <h2>送信が完了しました。<br>ご協力ありがとうございました。</h2>
+    </section-3>
+
+    <footer>
+        <small>@formタグ使用練習</small>
+    </footer>
+
+    <script>
+        const btn2 = document.getElementById("btn-2");
+        const sec2 = document.getElementById("sec-2");
+        btn2.addEventListener("click",function(){
+        sec2.classList.toggle("hidden") });
+    </script>
+</body>
+</html>
