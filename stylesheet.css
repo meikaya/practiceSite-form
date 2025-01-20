@@ -151,7 +151,7 @@ footer {
 }
 @media(max-width: 450px){
     header h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
     .btn a {
         padding-right: 8px;
